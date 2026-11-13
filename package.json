@@ -12,6 +12,9 @@
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit"
   },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.1.1",
