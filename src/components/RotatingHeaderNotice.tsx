@@ -12,7 +12,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export const ROTATING_HEADER_MESSAGES = [
   { text: "do not waste time", targetId: "portals", badge: "FAST BOOKING" },

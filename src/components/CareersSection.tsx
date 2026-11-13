@@ -6,13 +6,11 @@
  */
 
 import React from 'react';
-import { doorblyConfig, DepartmentInfo } from '../config/doorblyConfig.ts';
+import { doorblyConfig } from '../config/doorblyConfig.ts';
 import { 
   Building, 
   ArrowUpRight, 
-  Briefcase, 
   Sparkles,
-  MapPin,
   ChevronRight
 } from 'lucide-react';
 
@@ -22,8 +20,8 @@ interface CareersSectionProps {
 }
 
 export const CareersSection: React.FC<CareersSectionProps> = ({
-  onSelectDepartment,
-  onOpenRecruitment,
+  onSelectDepartment: _onSelectDepartment,
+  onOpenRecruitment: _onOpenRecruitment,
 }) => {
   return (
     <section id="careers" className="py-16 lg:py-24 bg-gradient-to-b from-white via-[#F7FAF9] to-white border-t border-slate-200/60">

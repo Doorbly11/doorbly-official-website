@@ -8,11 +8,11 @@
  *   "Settings Console" and Urgent Rotating Notices
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Logo } from './Logo.tsx';
 import { RotatingHeaderNotice } from './RotatingHeaderNotice.tsx';
 import { doorblyConfig } from '../config/doorblyConfig.ts';
-import { Menu, X, Settings, ArrowRight, Lock, ExternalLink } from 'lucide-react';
+import { Menu, X, Settings, Lock, ExternalLink } from 'lucide-react';
 
 interface HeaderProps {
   onOpenRecruitment: (dept?: string) => void;
@@ -21,20 +21,11 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  onOpenRecruitment,
+  onOpenRecruitment: _onOpenRecruitment,
   onOpenSettings,
   onNavigateSection,
 }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 15);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();

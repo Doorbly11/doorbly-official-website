@@ -15,7 +15,7 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({
-  onExploreServices,
+  onExploreServices: _onExploreServices,
   onJoinDoorbly,
 }) => {
   return (

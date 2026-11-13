@@ -183,7 +183,7 @@ export const doorblyConfig: DoorblyConfiguration = {
     {
       id: "business-corporate",
       name: "Business & Corporate Services",
-      description: "Facility facility management, office sanitization, workstation maintenance, and corporate service contracts.",
+      description: "Facility management, office sanitization, workstation maintenance, and corporate service contracts.",
       iconName: "Building2",
     },
     {

@@ -10,11 +10,7 @@ import { Logo } from './Logo.tsx';
 import { doorblyConfig } from '../config/doorblyConfig.ts';
 import { 
   MapPin, 
-  Mail, 
-  Phone, 
-  ExternalLink,
-  Shield, 
-  Heart
+  ExternalLink
 } from 'lucide-react';
 
 interface FooterProps {
@@ -25,7 +21,7 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({
-  onOpenRecruitment,
+  onOpenRecruitment: _onOpenRecruitment,
   onOpenLegal,
   onOpenSettings,
   onNavigateSection,

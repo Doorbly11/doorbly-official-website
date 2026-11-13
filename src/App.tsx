@@ -6,7 +6,7 @@
  * Everyday Services. Endless Opportunities.
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavigationTray } from './components/NavigationTray.tsx';
 import { Hero } from './components/Hero.tsx';
 import { PortalsSection } from './components/PortalsSection.tsx';

@@ -25,7 +25,6 @@ import {
   ChevronRight, 
   Menu, 
   X,
-  ArrowRight,
   Lock,
   ExternalLink
 } from 'lucide-react';
@@ -39,7 +38,7 @@ interface NavigationTrayProps {
 }
 
 export const NavigationTray: React.FC<NavigationTrayProps> = ({
-  onOpenRecruitment,
+  onOpenRecruitment: _onOpenRecruitment,
   onOpenSettings,
   onNavigateSection,
   isCollapsed,
