@@ -1,0 +1,6 @@
+{
+  "name": "Doorbly - Official Website",
+  "description": "Official company website for Doorbly, an Odisha-based doorstep services and work-opportunity platform connecting customers with local service professionals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
